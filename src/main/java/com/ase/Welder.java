@@ -5,11 +5,12 @@ package com.ase;
  */
 public class Welder extends Employee{
 
-    Welder(int authorizationLevel){
-        this.authorityLevel = authorizationLevel;
+    Welder(){
+        //Assign the authorization level
+        this.authorityLevel = WELDER;
     }
 
     protected void write(String message) {
-        System.out.println("");
+        System.out.println(message + "all parts have been welded together");
     }
 }

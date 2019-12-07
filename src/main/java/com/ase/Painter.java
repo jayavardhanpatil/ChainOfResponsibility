@@ -5,11 +5,12 @@ package com.ase;
  */
 public class Painter extends Employee{
 
-    Painter(int authorizationLevel){
-        this.authorityLevel = authorizationLevel;
+    Painter(){
+        //Assign the authorization level
+        this.authorityLevel = PAINTER;
     }
 
     protected void write(String message) {
-        System.out.println("");
+        System.out.println(message + "car complete");
     }
 }

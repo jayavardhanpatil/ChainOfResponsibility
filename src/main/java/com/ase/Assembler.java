@@ -5,11 +5,12 @@ package com.ase;
  */
 public class Assembler extends Employee{
 
-    Assembler(int authorizationLevel){
-        this.authorityLevel = authorizationLevel;
+    Assembler(){
+        //Assign the authorization level
+        this.authorityLevel = ASSEMBLER;
     }
 
     protected void write(String message) {
-        System.out.println("");
+        System.out.println(message + "all parts have been put together");
     }
 }

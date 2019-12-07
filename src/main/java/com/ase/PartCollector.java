@@ -5,11 +5,12 @@ package com.ase;
  */
 public class PartCollector extends Employee{
 
-    PartCollector(int authorizationLevel){
-        this.authorityLevel = authorizationLevel;
+    PartCollector(){
+        //Assign the authorization level
+        this.authorityLevel = PART_COLLECTOR;
     }
 
     protected void write(String message) {
-        System.out.println("");
+        System.out.println(message + "all parts have been gathered");
     }
 }
