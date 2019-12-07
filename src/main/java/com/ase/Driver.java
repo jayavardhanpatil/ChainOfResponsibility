@@ -24,7 +24,11 @@ public class Driver {
         partCollector.doWork(Employee.PART_COLLECTOR, "Build Car -> ");
 
         System.out.println("\nSecond test");
-        //test 2 - If Car is already welded then just Painting is pending
+        //test 2 - If parts are already gathered
+        partCollector.doWork(Employee.ASSEMBLER, "Build Car -> ");
+
+        System.out.println("\nThird test");
+        //test 2 - If parts are welded final step is painting
         partCollector.doWork(Employee.PAINTER, "Build Car -> ");
     }
 
